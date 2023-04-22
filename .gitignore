@@ -1,4 +1,5 @@
 .idea
 ocr
-#startOCR.cmd*
 ocr_temp.jpg
+/#startOCR.cmd.lnk
+/#start_window.bat
