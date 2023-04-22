@@ -12,7 +12,7 @@
 
 # 效果演示
 
-演示视频：[演示视频](./dev-tool/演示视频.mp4) 或 [视频床](https://files.catbox.moe/wipn2u.mp4)
+演示视频：[演示视频](./dev-tool/演示视频.mp4) 或 [下载预览](https://p.inari.site/usr/237/644352595f3af.mp4)
 
 图片预览：无
 
