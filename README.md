@@ -41,8 +41,8 @@
    window_name = ['深淵のラビリントス', '1.00']  # 用于搜索游戏窗口的关键词
    比如这里的游戏窗口名为“深淵のラビリントス  1.00”，设置上面的关键词即可准确定位游戏窗口，当然也可以少些点关键词，检索到多个匹配窗口的话，会让选择的。
 3. 确保有OCR服务地址，这里直接用的是[团子翻译器](https://translator.dango.cloud/)打包的OCR。
-   团子翻译器新版不再发布github Releases，所以我测试时是先安装好团子翻译器，然后单独运行了**\DangoTranslator\app\ocr\startOCR.cmd**
-4. 执行**python.exe main.py**，或运行**#start_window.bat（需配置或修改）**
+   团子翻译器新版不再发布github Releases，所以我测试时是先安装好团子翻译器，然后单独运行了\DangoTranslator\app\ocr\startOCR.cmd
+4. 执行python.exe main.py，或运行#start_window.bat（需配置或修改）
 5. 我应该不会进行打包，毕竟写得烂（~~我很懒~~）
 6. 点击“Dir”按钮选择txt文件目录
 7. 点击“R”按钮刷新txt文件目录
