@@ -51,7 +51,7 @@
 # 思路说明
 
 * 见图片：[思路说明](./dev-tool/思路说明.jpg)
-  ![image](./dev-tool/思路说明.jpg)
+  ![image](https://raw.githubusercontent.com/zfy2299/Gal-Sub/main/dev-tool/%E6%80%9D%E8%B7%AF%E8%AF%B4%E6%98%8E.jpg)
 * 大致就如上图所示了，思路不难所以懒得解释了。
 * 将txt文本读取到内存，按行分割为列表，然后通过Python自带的difflib.SequenceMatcher()搜索“原文.txt”。
 * 通过记录上一次匹配到的索引来减少搜索时间。
@@ -63,4 +63,5 @@
 * 配置本地存储（先完成上条）
   
   * 包括：OCR截图位置，窗口大小，透明度，txt文件夹，
+* 自定义字体
 * ……
