@@ -51,7 +51,7 @@
 # 思路说明
 
 * 见图片：[思路说明](./dev-tool/思路说明)
-  ![image]('./dev-tool/思路说明.jpg')
+  ![image](./dev-tool/思路说明.jpg)
 * 大致就如上图所示了，思路不难所以懒得解释了。
 * 将txt文本读取到内存，按行分割为列表，然后通过Python自带的difflib.SequenceMatcher()搜索“原文.txt”。
 * 通过记录上一次匹配到的索引来减少搜索时间。
