@@ -26,11 +26,12 @@ keyword_listen = [
 mouse_listen = [
     # pynput.mouse.Button.left
 ]
-# 这个为主动无延迟
-keyword_listen_immediately = [
+keyword_listen_immediately = [  # 这个为主动无延迟刷新
     pynput.keyboard.Key.f4,
     pynput.keyboard.KeyCode(char="'"),
 ]
+# OCR服务地址
+ocr_url = 'http://127.0.0.1:6666/ocr/api'
 window_obj = None
 rate_limit = 0.4  # 防抖
 shot_delay = 0.35
@@ -82,13 +83,13 @@ def similarity(s1, s2):
     return difflib.SequenceMatcher(None, s1, s2).ratio()
 
 
-def post_ocr(jpg=os.path.join(os.getcwd(), 'ocr_temp.jpg'), ocr_url='http://127.0.0.1:6666/ocr/api'):
+def post_ocr(jpg=os.path.join(os.getcwd(), 'ocr_temp.jpg'), ocr__url=ocr_url):
     body = {
         "Language": 'JAP',
         "ImagePath": jpg,
     }
     try:
-        response = requests.post(ocr_url, data=json.dumps(body), verify=False)
+        response = requests.post(ocr__url, data=json.dumps(body), verify=False)
         if response.status_code != 200:
             return '-1'
         if 'Data' not in json.loads(response.text):
