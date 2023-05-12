@@ -14,7 +14,7 @@ from PyQt5.QtWidgets import QApplication
 from GUI import TextWindow
 from rect_co import get_rect
 
-window_name = ['深淵のラビリントス', '1.00']  # 可写部分
+window_name = ['深淵のラビリントス', '1.02']  # 可写部分
 search_hwnd = -1
 search_window_name = ''
 keyword_listen = [
